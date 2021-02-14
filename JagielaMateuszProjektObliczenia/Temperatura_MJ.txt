@@ -1,0 +1,5 @@
+Przeliczasz z Kelvina
+
+Celcjusza: -173.0
+Kelvina: 100.0
+Fahrenhaita: -279.4

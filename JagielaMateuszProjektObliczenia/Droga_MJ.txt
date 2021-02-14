@@ -1,0 +1,7 @@
+Przeliczasz z Milimetrow
+
+Milimetry: 505.0
+Metry: 0.505
+Kilometry: 5.05E-4
+Centymetry: 50.5
+Decymetry: 5.05
