@@ -8,8 +8,10 @@ package pl.com.mateusz.jagiela.listazakupw;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  *
@@ -30,6 +32,7 @@ public class ListaZakupow extends javax.swing.JFrame {
         addToolTipToElements2();
         addToolTipToElements3();
         addToolTipToElements4();
+        filljCBProducts();
     }
 
     /**
@@ -448,6 +451,21 @@ public class ListaZakupow extends javax.swing.JFrame {
            }catch(IOException e){
             System.out.println("Błąd: "+e.toString());
            }
+    }
+    
+    private void filljCBProducts(){
+        ArticleTypeUtils atu = new ArticleTypeUtils();
+        //TODO read procucts from file!!!
+        jComboBox_typeOfProduct.removeAllItems();
+        try {
+            Scanner sc = new Scanner(new File("produkty.txt"));
+            while(sc.hasNext()){
+                String item = sc.nextLine();
+                jComboBox_typeOfProduct.addItem(item);
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println(ex.toString());
+        }
     }
     
     private void clear(){
