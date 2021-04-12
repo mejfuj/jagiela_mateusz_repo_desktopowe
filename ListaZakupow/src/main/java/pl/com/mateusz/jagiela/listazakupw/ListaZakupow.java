@@ -255,7 +255,7 @@ public class ListaZakupow extends javax.swing.JFrame {
         jTextArea_today.setText(jTextArea_today.getText()+jTextField_insertName.getText()+"; "+jTextField_insertValue.getText()+"; "+jComboBox_typeOfProduct.getSelectedItem()+"; "+jTextField_date.getText()+";\n");
         //clear();
         //saveSettings();
-        SaveToFile stf = new SaveToFile();
+        FileUtils stf = new FileUtils();
         stf.saveToFile(jTextField_insertName.getText());
     }//GEN-LAST:event_jButton_saveActionPerformed
 
