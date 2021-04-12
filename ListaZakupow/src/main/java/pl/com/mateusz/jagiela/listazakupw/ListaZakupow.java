@@ -7,6 +7,9 @@ package pl.com.mateusz.jagiela.listazakupw;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  *
@@ -72,6 +75,12 @@ public class ListaZakupow extends javax.swing.JFrame {
         });
 
         jLabel_insertValue.setText("Podaj wartość");
+
+        jTextField_insertValue.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_insertValueActionPerformed(evt);
+            }
+        });
 
         jLabel_today.setText("Dzisiejsze zakupy");
 
@@ -241,8 +250,15 @@ public class ListaZakupow extends javax.swing.JFrame {
 
     private void jButton_saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_saveActionPerformed
         jTextArea_today.setText(jTextArea_today.getText()+jTextField_insertName.getText()+"; "+jTextField_insertValue.getText()+"; "+jComboBox_typeOfProduct.getSelectedItem()+"; "+jTextField_date.getText()+";\n");
-        clear();
+        //clear();
+        //saveSettings();
+        SaveToFile stf = new SaveToFile();
+        stf.saveToFile(jTextField_insertName.getText());
     }//GEN-LAST:event_jButton_saveActionPerformed
+
+    private void jTextField_insertValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_insertValueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_insertValueActionPerformed
 
     /**
      * @param args the command line arguments
@@ -418,11 +434,29 @@ public class ListaZakupow extends javax.swing.JFrame {
                 + "</html>");
     }
     
+    private void saveSettings(){
+        try{
+           File f = new File("Zapis_MJ.txt");  
+           FileWriter fw = new FileWriter(f);          
+            String a = (String) jTextField_insertName.getText();
+            String b = (String) jTextField_insertValue.getText();
+            String c = (String) jComboBox_typeOfProduct.getSelectedItem();
+            String d = (String) jTextField_date.getText();
+            
+            fw.write(""+a+"-"+b+"-"+c+"-"+d);
+            fw.close();
+           }catch(IOException e){
+            System.out.println("Błąd: "+e.toString());
+           }
+    }
+    
     private void clear(){
         jTextField_insertName.setText("");
         jTextField_insertValue.setText("");
         jTextField_date.setText("");
     }
+    
+    private String file_name = "lista_zakupow.csv";
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_save;

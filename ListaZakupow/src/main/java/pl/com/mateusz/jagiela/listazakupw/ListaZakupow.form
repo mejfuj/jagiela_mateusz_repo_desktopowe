@@ -189,6 +189,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField_insertValue">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_insertValueActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel_today">
               <Properties>
