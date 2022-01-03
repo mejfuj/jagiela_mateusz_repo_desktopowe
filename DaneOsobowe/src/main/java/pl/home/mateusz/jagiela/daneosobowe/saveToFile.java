@@ -16,7 +16,7 @@ import java.io.IOException;
 
 
 
-public class saveToFile {
+public class SaveToFile {
     private void saveSettings(){
         try{
            File f = new File("zapis.txt");  

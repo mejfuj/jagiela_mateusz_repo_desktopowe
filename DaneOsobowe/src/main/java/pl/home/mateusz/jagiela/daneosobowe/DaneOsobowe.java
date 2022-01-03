@@ -27,7 +27,7 @@ public class DaneOsobowe extends javax.swing.JFrame {
         initComponents();
     }
 
-    saveToFile stf = new saveToFile(saveToFile);
+    //SaveToFile stf = new SaveToFile(SaveToFile);
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -176,6 +176,21 @@ public class DaneOsobowe extends javax.swing.JFrame {
             }
         });
     }
+    
+//    jList1.addMouseListener(new MouseAdapter(){
+//        public void mousePressed(MouseEvent e) {check(e);}
+//        public void mouseReleased(MouseEvent e {check(e));}
+//        
+//        public void check(MouseEvent e){
+//            if(e.isPopupTrigger()){
+//                jList.setSelectedIndex(jList.locationToIndex(e.getPoint)));
+//                JOptionPane.showMessageDialog(null,
+//                        "Selected index "+jList.getSelectedIndex()
+//                +" value: "+jList.getSelectedValue());
+//            jPopupMenu1.show(jList, e.getX(), e.getY());
+//            }
+//        }
+//    }
     
     
 

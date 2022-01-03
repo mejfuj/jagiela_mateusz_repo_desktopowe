@@ -9,6 +9,6 @@ package pl.home.mateusz.jagiela.daneosobowe;
  *
  * @author Mateusz
  */
-public class readFromFile {
+public class ReadFromFile {
     
 }
