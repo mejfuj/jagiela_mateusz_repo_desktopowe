@@ -5,10 +5,28 @@
  */
 package pl.home.mateusz.jagiela.daneosobowe;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  *
  * @author Mateusz
  */
+
+
+
 public class saveToFile {
-    
+    private void saveSettings(){
+        try{
+           File f = new File("zapis.txt");  
+           FileWriter fw = new FileWriter(f);          
+            String a = (String) jList1.getText();
+            
+            fw.write(""+a+"");
+            fw.close();
+           }catch(IOException e){
+            System.out.println("Błąd: "+e.toString());
+           }
+    }
 }
