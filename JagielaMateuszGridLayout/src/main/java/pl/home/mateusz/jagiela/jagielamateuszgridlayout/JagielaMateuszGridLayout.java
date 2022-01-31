@@ -10,12 +10,16 @@ package pl.home.mateusz.jagiela.jagielamateuszgridlayout;
  * @author Mateusz
  */
 public class JagielaMateuszGridLayout extends javax.swing.JFrame {
-
+    double pierwszaliczba;
+    double drugaliczba;
+    double wynik;
+    String operatory;
     /**
-     * Creates new form JagielaMateuszGridLayout
+     * Creates new form JagielaMateuszGridLayout1
      */
     public JagielaMateuszGridLayout() {
         initComponents();
+        this.setLocationRelativeTo(null); 
     }
 
     /**
@@ -27,21 +31,395 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        mj_jTextFieldMain = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        mj_jButton1 = new javax.swing.JButton();
+        mj_jButton2 = new javax.swing.JButton();
+        mj_jButton3 = new javax.swing.JButton();
+        mj_jButton4 = new javax.swing.JButton();
+        mj_jButton5 = new javax.swing.JButton();
+        mj_jButton6 = new javax.swing.JButton();
+        mj_jButton7 = new javax.swing.JButton();
+        mj_jButton8 = new javax.swing.JButton();
+        mj_jButton9 = new javax.swing.JButton();
+        mj_jButton0 = new javax.swing.JButton();
+        mj_jButtonPlus = new javax.swing.JButton();
+        mj_jButtonMinus = new javax.swing.JButton();
+        mj_jButtonDzielenie = new javax.swing.JButton();
+        mj_jButtonMnozenie = new javax.swing.JButton();
+        mj_jButtonPM = new javax.swing.JButton();
+        mj_jButtonKropka = new javax.swing.JButton();
+        mj_jButtonC = new javax.swing.JButton();
+        mj_jButtonWynik = new javax.swing.JButton();
+        mj_jButtonC1 = new javax.swing.JButton();
+        mj_jButtonPotegowanie = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        mj_jTextFieldMain.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(mj_jTextFieldMain)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(mj_jTextFieldMain, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
+        );
+
+        jPanel2.setLayout(new java.awt.GridLayout(5, 4, 2, 2));
+
+        mj_jButton1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton1.setText("1");
+        mj_jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton1);
+
+        mj_jButton2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton2.setText("2");
+        mj_jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton2);
+
+        mj_jButton3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton3.setText("3");
+        mj_jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton3);
+
+        mj_jButton4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton4.setText("4");
+        mj_jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton4);
+
+        mj_jButton5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton5.setText("5");
+        mj_jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton5);
+
+        mj_jButton6.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton6.setText("6");
+        mj_jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton6);
+
+        mj_jButton7.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton7.setText("7");
+        mj_jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton7);
+
+        mj_jButton8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton8.setText("8");
+        mj_jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton8);
+
+        mj_jButton9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton9.setText("9");
+        mj_jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton9);
+
+        mj_jButton0.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton0.setText("0");
+        mj_jButton0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButton0ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButton0);
+
+        mj_jButtonPlus.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonPlus.setText("+");
+        mj_jButtonPlus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonPlusActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonPlus);
+
+        mj_jButtonMinus.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonMinus.setText("-");
+        mj_jButtonMinus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonMinusActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonMinus);
+
+        mj_jButtonDzielenie.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonDzielenie.setText("/");
+        mj_jButtonDzielenie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonDzielenieActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonDzielenie);
+
+        mj_jButtonMnozenie.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonMnozenie.setText("*");
+        mj_jButtonMnozenie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonMnozenieActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonMnozenie);
+
+        mj_jButtonPM.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonPM.setText("+/-");
+        mj_jButtonPM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonPMActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonPM);
+
+        mj_jButtonKropka.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonKropka.setText(".");
+        mj_jButtonKropka.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonKropkaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonKropka);
+
+        mj_jButtonC.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonC.setText("C");
+        mj_jButtonC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonCActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonC);
+
+        mj_jButtonWynik.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonWynik.setText("=");
+        mj_jButtonWynik.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonWynikActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonWynik);
+
+        mj_jButtonC1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonC1.setText("√");
+        mj_jButtonC1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonC1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonC1);
+
+        mj_jButtonPotegowanie.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonPotegowanie.setText("x²");
+        mj_jButtonPotegowanie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mj_jButtonPotegowanieActionPerformed(evt);
+            }
+        });
+        jPanel2.add(mj_jButtonPotegowanie);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 425, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mj_jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton1ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton1.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton1ActionPerformed
+
+    private void mj_jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton2ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton2.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton2ActionPerformed
+
+    private void mj_jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton3ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton3.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton3ActionPerformed
+
+    private void mj_jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton4ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton4.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton4ActionPerformed
+
+    private void mj_jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton5ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton5.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton5ActionPerformed
+
+    private void mj_jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton6ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton6.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton6ActionPerformed
+
+    private void mj_jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton7ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton7.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton7ActionPerformed
+
+    private void mj_jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton8ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton8.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton8ActionPerformed
+
+    private void mj_jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton9ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton9.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton9ActionPerformed
+
+    private void mj_jButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButton0ActionPerformed
+        String WpisLicz = mj_jTextFieldMain.getText() + mj_jButton0.getText();
+        mj_jTextFieldMain.setText(WpisLicz);
+    }//GEN-LAST:event_mj_jButton0ActionPerformed
+
+    private void mj_jButtonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonPlusActionPerformed
+        pierwszaliczba = Double.parseDouble(mj_jTextFieldMain.getText());
+        mj_jTextFieldMain.setText("");
+        operatory = "+";
+    }//GEN-LAST:event_mj_jButtonPlusActionPerformed
+
+    private void mj_jButtonMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonMinusActionPerformed
+        pierwszaliczba = Double.parseDouble(mj_jTextFieldMain.getText());
+        mj_jTextFieldMain.setText("");
+        operatory = "-";
+    }//GEN-LAST:event_mj_jButtonMinusActionPerformed
+
+    private void mj_jButtonDzielenieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonDzielenieActionPerformed
+        pierwszaliczba = Double.parseDouble(mj_jTextFieldMain.getText());
+        mj_jTextFieldMain.setText("");
+        operatory = "/";
+    }//GEN-LAST:event_mj_jButtonDzielenieActionPerformed
+
+    private void mj_jButtonMnozenieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonMnozenieActionPerformed
+        pierwszaliczba = Double.parseDouble(mj_jTextFieldMain.getText());
+        mj_jTextFieldMain.setText("");
+        operatory = "*";
+    }//GEN-LAST:event_mj_jButtonMnozenieActionPerformed
+
+    private void mj_jButtonPMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonPMActionPerformed
+        double ops = Double.parseDouble(String.valueOf(mj_jTextFieldMain.getText()));
+        ops = ops * (-1);
+        mj_jTextFieldMain.setText(String.valueOf(ops));
+    }//GEN-LAST:event_mj_jButtonPMActionPerformed
+
+    private void mj_jButtonKropkaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonKropkaActionPerformed
+        mj_jTextFieldMain.setText(mj_jTextFieldMain.getText() + ".");
+    }//GEN-LAST:event_mj_jButtonKropkaActionPerformed
+
+    private void mj_jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonCActionPerformed
+        mj_jTextFieldMain.setText("");
+    }//GEN-LAST:event_mj_jButtonCActionPerformed
+
+    private void mj_jButtonWynikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonWynikActionPerformed
+        String odp;
+        drugaliczba = Double.parseDouble(mj_jTextFieldMain.getText());
+        if (operatory == "+"){
+            wynik = pierwszaliczba + drugaliczba;
+            odp = String.format("%.0f",wynik);
+            mj_jTextFieldMain.setText(odp);
+            if(drugaliczba==0){
+                mj_jTextFieldMain.setText("Błąd: po co dodawać 0?");
+            }
+            
+        }else if (operatory == "-"){
+            wynik = pierwszaliczba - drugaliczba;
+            odp = String.format("%.0f",wynik);
+            mj_jTextFieldMain.setText(odp);
+            if(drugaliczba==0){
+                mj_jTextFieldMain.setText("Błąd: po co odejmować 0?");
+            }
+            
+        }else if (operatory == "*"){
+            wynik = pierwszaliczba * drugaliczba;
+            odp = String.format("%.0f",wynik);
+            mj_jTextFieldMain.setText(odp);
+            if(drugaliczba==0){
+                mj_jTextFieldMain.setText("Błąd: Nie mnóż przez 0");
+            }
+            
+        }else if (operatory == "/"){
+            wynik = pierwszaliczba / drugaliczba;
+            odp = String.format("%.0f",wynik);
+            mj_jTextFieldMain.setText(odp);
+            if(drugaliczba==0){
+                mj_jTextFieldMain.setText("Błąd: Nie dziel przez 0");
+            }
+            
+        }else if (operatory == "%"){
+            wynik = pierwszaliczba % drugaliczba;
+            odp = String.format("%.0f",wynik);
+            mj_jTextFieldMain.setText(odp); 
+        
+        }else if (operatory == "^"){
+            wynik = pierwszaliczba * pierwszaliczba;
+            odp = String.format("%.0f",wynik);
+            mj_jTextFieldMain.setText(odp);
+            if(pierwszaliczba==0){
+                mj_jTextFieldMain.setText("Błąd: Nie potęguj przez 0");
+            }
+            
+        }
+    }//GEN-LAST:event_mj_jButtonWynikActionPerformed
+
+    private void mj_jButtonC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonC1ActionPerformed
+        pierwszaliczba = Double.parseDouble(mj_jTextFieldMain.getText());
+        double sqrt = Math.sqrt(pierwszaliczba);
+        mj_jTextFieldMain.setText(String.valueOf(sqrt));
+    }//GEN-LAST:event_mj_jButtonC1ActionPerformed
+
+    private void mj_jButtonPotegowanieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mj_jButtonPotegowanieActionPerformed
+        pierwszaliczba = Double.parseDouble(mj_jTextFieldMain.getText());
+        mj_jTextFieldMain.setText("");
+        operatory = "^";
+    }//GEN-LAST:event_mj_jButtonPotegowanieActionPerformed
 
     /**
      * @param args the command line arguments
@@ -69,6 +447,7 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(JagielaMateuszGridLayout.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -79,5 +458,28 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton mj_jButton0;
+    private javax.swing.JButton mj_jButton1;
+    private javax.swing.JButton mj_jButton2;
+    private javax.swing.JButton mj_jButton3;
+    private javax.swing.JButton mj_jButton4;
+    private javax.swing.JButton mj_jButton5;
+    private javax.swing.JButton mj_jButton6;
+    private javax.swing.JButton mj_jButton7;
+    private javax.swing.JButton mj_jButton8;
+    private javax.swing.JButton mj_jButton9;
+    private javax.swing.JButton mj_jButtonC;
+    private javax.swing.JButton mj_jButtonC1;
+    private javax.swing.JButton mj_jButtonDzielenie;
+    private javax.swing.JButton mj_jButtonKropka;
+    private javax.swing.JButton mj_jButtonMinus;
+    private javax.swing.JButton mj_jButtonMnozenie;
+    private javax.swing.JButton mj_jButtonPM;
+    private javax.swing.JButton mj_jButtonPlus;
+    private javax.swing.JButton mj_jButtonPotegowanie;
+    private javax.swing.JButton mj_jButtonWynik;
+    private javax.swing.JTextField mj_jTextFieldMain;
     // End of variables declaration//GEN-END:variables
 }
