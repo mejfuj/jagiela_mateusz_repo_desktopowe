@@ -56,8 +56,14 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         mj_jButtonPotegowanie = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+
+        mj_jTextFieldMain.setEditable(false);
+        mj_jTextFieldMain.setBackground(new java.awt.Color(0, 0, 0));
         mj_jTextFieldMain.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        mj_jTextFieldMain.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -70,9 +76,12 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
             .addComponent(mj_jTextFieldMain, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
         );
 
-        jPanel2.setLayout(new java.awt.GridLayout(5, 4, 2, 2));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setLayout(new java.awt.GridLayout(5, 4, 5, 5));
 
-        mj_jButton1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton1.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton1.setText("1");
         mj_jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,7 +90,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton1);
 
-        mj_jButton2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton2.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton2.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton2.setText("2");
         mj_jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +101,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton2);
 
-        mj_jButton3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton3.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton3.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton3.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton3.setText("3");
         mj_jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,7 +112,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton3);
 
-        mj_jButton4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton4.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton4.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton4.setText("4");
         mj_jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,7 +123,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton4);
 
-        mj_jButton5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton5.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton5.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton5.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton5.setText("5");
         mj_jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,7 +134,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton5);
 
-        mj_jButton6.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton6.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton6.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton6.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton6.setText("6");
         mj_jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,7 +145,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton6);
 
-        mj_jButton7.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton7.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton7.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton7.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton7.setText("7");
         mj_jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,7 +156,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton7);
 
-        mj_jButton8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton8.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton8.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton8.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton8.setText("8");
         mj_jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,7 +167,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton8);
 
-        mj_jButton9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton9.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton9.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton9.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton9.setText("9");
         mj_jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,7 +178,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton9);
 
-        mj_jButton0.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButton0.setBackground(new java.awt.Color(0, 0, 0));
+        mj_jButton0.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButton0.setForeground(new java.awt.Color(255, 255, 255));
         mj_jButton0.setText("0");
         mj_jButton0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,7 +189,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButton0);
 
-        mj_jButtonPlus.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonPlus.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonPlus.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonPlus.setForeground(new java.awt.Color(102, 255, 102));
         mj_jButtonPlus.setText("+");
         mj_jButtonPlus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,7 +200,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButtonPlus);
 
-        mj_jButtonMinus.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonMinus.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonMinus.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonMinus.setForeground(new java.awt.Color(51, 255, 51));
         mj_jButtonMinus.setText("-");
         mj_jButtonMinus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -180,7 +211,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButtonMinus);
 
-        mj_jButtonDzielenie.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonDzielenie.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonDzielenie.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonDzielenie.setForeground(new java.awt.Color(51, 255, 51));
         mj_jButtonDzielenie.setText("/");
         mj_jButtonDzielenie.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -189,7 +222,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButtonDzielenie);
 
-        mj_jButtonMnozenie.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonMnozenie.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonMnozenie.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonMnozenie.setForeground(new java.awt.Color(102, 255, 102));
         mj_jButtonMnozenie.setText("*");
         mj_jButtonMnozenie.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,7 +233,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButtonMnozenie);
 
-        mj_jButtonPM.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonPM.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonPM.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonPM.setForeground(new java.awt.Color(51, 255, 153));
         mj_jButtonPM.setText("+/-");
         mj_jButtonPM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,7 +244,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButtonPM);
 
-        mj_jButtonKropka.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonKropka.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonKropka.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonKropka.setForeground(new java.awt.Color(0, 255, 204));
         mj_jButtonKropka.setText(".");
         mj_jButtonKropka.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -216,7 +255,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButtonKropka);
 
-        mj_jButtonC.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonC.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonC.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonC.setForeground(new java.awt.Color(204, 255, 0));
         mj_jButtonC.setText("C");
         mj_jButtonC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -225,7 +266,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButtonC);
 
-        mj_jButtonWynik.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonWynik.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonWynik.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonWynik.setForeground(new java.awt.Color(204, 255, 0));
         mj_jButtonWynik.setText("=");
         mj_jButtonWynik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -234,7 +277,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButtonWynik);
 
-        mj_jButtonC1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonC1.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonC1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonC1.setForeground(new java.awt.Color(255, 255, 51));
         mj_jButtonC1.setText("√");
         mj_jButtonC1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,7 +288,9 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         });
         jPanel2.add(mj_jButtonC1);
 
-        mj_jButtonPotegowanie.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        mj_jButtonPotegowanie.setBackground(new java.awt.Color(51, 51, 51));
+        mj_jButtonPotegowanie.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        mj_jButtonPotegowanie.setForeground(new java.awt.Color(255, 204, 0));
         mj_jButtonPotegowanie.setText("x²");
         mj_jButtonPotegowanie.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -257,14 +304,14 @@ public class JagielaMateuszGridLayout extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 425, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 421, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE))
         );
 
         pack();
